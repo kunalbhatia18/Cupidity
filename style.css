@@ -2,6 +2,16 @@
   font-family: Brown-Light;
   src: url(Fonts/Dosis-VariableFont_wght.ttf);
 }
+/* .dark{
+  height: auto;
+  color:white;
+  font-family: Brown-Light;
+  letter-spacing: 1.15px;
+  background-image: url(Images/pexels-daniel-reche-3721941.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
 body{
   margin:0;
   padding:0;
@@ -91,6 +101,7 @@ ul img{
   color:#242424;
 }
 @media only screen and (min-width: 770px){
+  
   #rightgrid{
     padding-left: 65vw;
   }
@@ -143,17 +154,43 @@ ul img{
   }
   li.left{
     font-size: 1.1em;
-    padding-top:4px;
+    padding-top:3px;
+  }
+  li.right{
+    padding-top:2px;
+  }
+  ul img{
+    height:6vh;
+    padding:10px 0 0 7px;
   }
 }
-@media only screen and (max-width: 380px){
+/* @media only screen and (max-width: 380px){
   .intro img{
-    padding-left: 0;
+    padding-left: 10;
   }
-}
+} */
 @media only screen and (min-width: 500px) and (max-width: 700px) and (max-height: 760px){
   .intro img{
     padding-left: 10vw;
+  }
+}
+@media only screen and (max-width: 380px){
+  li.right{
+    font-size:1em;
+  }
+   .intro img {
+    padding-left: 0%;
+    height:30vh;
+  } 
+  ul.main-nav {
+    display:-webkit-flex;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: #333; */
   }
 }
 /* SLIDESHOW */
@@ -210,7 +247,7 @@ ul img{
   font-family: Brown-Light;
   letter-spacing: 1.1px;
   /* background-color: #fc7da7; */
-  background-color: #f9f9f9;
+  background-color: rgb(242, 242, 242);
   width:100vw;
   display: block;
   overflow: hidden;
@@ -279,3 +316,111 @@ ul img{
   }
 }
 
+/******************************************************** ABOUT CSS ****************************************************/
+
+#about{
+  height: auto;
+  font-family: Brown-Light;
+  letter-spacing: 1.15px;
+  /* background-position: center; */
+}
+ul#op{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+nav#bg-pic{
+  background-image: url(Images/pexels-moose-photos-1037992.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/******************************************************** FAQ CSS ****************************************************/
+
+#FAQ{
+  height: auto;
+  font-family: Brown-Light;
+  letter-spacing: 1.15px;
+  /* background-position: center; */
+}
+nav#bg-pic{
+  background-image: url(Images/pexels-moose-photos-1037992.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul#op{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container1{
+  background-color: #fff;
+  color:#666;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding:4rem;
+  width:48rem;
+}
+
+h2{
+  font-size: 1.75rem;
+  color:#333366;
+  padding:1.4rem;
+}
+
+.accordion1 a{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  padding: 1rem 3rem 1rem 1rem !important;
+  color:#7288A2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #DDD;
+  text-decoration: none;
+}
+.accordion1 a.active{
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion1 a:hover, .accordion1 a:hover::after{cursor: pointer;color: #03b5d2;}
+
+
+.accordion1 a::after{
+  font-family: "Font Awesome 5 Free";
+  content:'\f358';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1.5rem;
+  color:#03b5d2;
+}
+
+.accordion1 .content1 p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion1 .content1{
+  opacity: 0;
+  max-height: 0;
+  padding : 0 1rem;
+  border-bottom:1px solid #DDD;
+  overflow: hidden;
+  transform: all .3s ease;
+}
+.accordion1 .content1.active{
+  opacity: 1;
+  max-height: 100%;
+  padding:1rem;
+  transition: all .3s ease;
+}
+@media only screen and (max-width: 769px){
+  .container1{
+    width:36rem;
+  }
+}
+@media only screen and (max-width: 500px){
+  .container1{
+    width:20rem;
+    padding-left:0;
+    padding-right: 0;
+    overflow-x: hidden;
+  }
+}
