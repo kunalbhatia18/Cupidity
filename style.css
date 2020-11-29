@@ -67,7 +67,7 @@ li.left
 {
     margin-right: auto;
     font-size: 1.7em;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 
@@ -164,6 +164,8 @@ ul img{
   li.left{
     font-size: 1.1em;
     padding-top:3px;
+    font-family: Brown-Light-Medium;
+
   }
   li.right{
     padding-top:2px;
