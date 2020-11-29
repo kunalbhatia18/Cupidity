@@ -2,6 +2,14 @@
   font-family: Brown-Light;
   src: url(Fonts/Dosis-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Brown-Light-Bold;
+  src: url(Fonts/Dosis-SemiBold.ttf);
+}
+@font-face {
+  font-family: Brown-Light-Medium;
+  src: url(Fonts/Dosis-Medium.ttf);
+}
 /* .dark{
   height: auto;
   color:white;
@@ -338,6 +346,7 @@ nav#bg-pic{
   height: auto;
   font-family: Brown-Light;
   letter-spacing: 1.15px;
+  background-color: #ffffff;
   /* background-position: center; */
 }
 nav#bg-pic{
@@ -350,8 +359,8 @@ ul#op{
 }
 
 .container1{
-  background-color: #fff;
-  color:#666;
+  background-color: #ffffff;
+  color:rgb(50, 50, 50);
   min-height: 100vh;
   margin: 0 auto;
   padding:4rem;
@@ -433,6 +442,7 @@ h2{
   min-height: 100vh;
   font-family: Brown-Light;
   letter-spacing: 1.15px;
+  background-color: #ffffff;
   /* background-position: center; */
 }
 ul#op{
@@ -458,9 +468,10 @@ nav#bg-pic{
 }
 
 #TAC{
-  margin:15vh auto 15vh auto;
+  margin:10vh auto 15vh auto;
   width:80vw;
   display: flex;
+  background-color: #ffffff;
   flex-direction: column;
   align-items: center;
   justify-content: center;
