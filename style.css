@@ -26,7 +26,7 @@ body{
 }
 #home{
   height: auto;
-  font-family: Brown-Light;
+  font-family: Brown-Light-Medium;
   letter-spacing: 1.15px;
   background-image: url(Images/pexels-moose-photos-1037992.jpg);
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ ul.main-nav {
 }
 .topnav ul li.right a:hover{
   color:#f76ead;
-  font-weight: 700;
+  font-weight: 550;
   /* color:white;
   background-color:#e98099; */
 }
@@ -67,6 +67,7 @@ li.left
 {
     margin-right: auto;
     font-size: 1.7em;
+    font-weight: 900;
 }
 
 
@@ -103,7 +104,7 @@ ul img{
 }
 .info-para p{
   width:35vw;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1.15px;
   font-size: 1.6em;
   color:#242424;
